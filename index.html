@@ -11,21 +11,28 @@
                 text-align: center;
                 background-color: aquamarine;
                 width:100%;
+                position: absolute;
             }
-            #navigation-menu ul li{
+            #navigation-menu li{
                 color: red;
+                float:left;
+                padding: 15px;
+                padding: 15px;
+                width: fit-content;
+                list-style: none;
             }
             h1 {
                 text-align: center;
             }
-            ul {
-                list-style: none;
+            li {
+              
             }
             h2 {
                 text-align: center;
             }
             #container {
-                margin:auto 30% auto 30%;
+                position: relative;
+                margin: 100px auto auto auto;
                 border: 3px solid gray;
                 padding: 10px;
             }
@@ -46,14 +53,12 @@
     </head>
     <body> 
         <h1>Road to Senior</h1>
-        <nav id="navigation-menu">
-            <ul>
-                <a href=""><li>Proyectos</li></a>
-                <a href=""><li>Recursos</li></a>
-                <a href=""><li>Empresas</li></a>
-                <a href=""><li>Sobre mi</li></a>
-            </ul>
-        </nav>
+        <div id="navigation-menu">
+            <a href=""><li>Proyectos</li></a>
+            <a href=""><li>Recursos</li></a>
+            <a href=""><li>Empresas</li></a>
+            <a href=""><li>Sobre mi</li></a>
+        </div>
         <div id="container">
             <h2 id="first-blog">Bienvenidos a mi blog</h2>
             <p class="date">Marzo 18, 2021</p>
@@ -78,6 +83,7 @@
                 Absolute sirve para darle un valor fijo a una caja, especificando la posicion absoluta, con absolute pasan cosas y es que se
                 puede sobreponer, por lo que hay que usarlo con cuidado, y especificar su <span class="code">z-index</span> <br>
             </p>
+            <hr>
         </div>
 
     </body>
