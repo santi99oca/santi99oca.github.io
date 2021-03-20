@@ -7,9 +7,13 @@
             body{
                 font-family: Arial, Helvetica, sans-serif;
             }
-            nav {
+            #navigation-menu{
                 text-align: center;
                 background-color: aquamarine;
+                width:100%;
+            }
+            #navigation-menu ul li{
+                color: red;
             }
             h1 {
                 text-align: center;
@@ -20,11 +24,29 @@
             h2 {
                 text-align: center;
             }
+            #container {
+                margin:auto 30% auto 30%;
+                border: 3px solid gray;
+                padding: 10px;
+            }
+            .date {
+                border-bottom: 1px solid rgb(76, 75, 77);
+                border-left: 5px solid rgb(76, 75, 77);
+                width:fit-content;
+                padding: 2px;
+                color: salmon;
+            }
+            .code{
+                font-family: monospace;
+            }
+            a {
+                text-decoration-line:none;
+            }
         </style>   
     </head>
     <body> 
         <h1>Road to Senior</h1>
-        <nav>
+        <nav id="navigation-menu">
             <ul>
                 <a href=""><li>Proyectos</li></a>
                 <a href=""><li>Recursos</li></a>
@@ -32,14 +54,29 @@
                 <a href=""><li>Sobre mi</li></a>
             </ul>
         </nav>
-        <div>
+        <div id="container">
             <h2 id="first-blog">Bienvenidos a mi blog</h2>
-            <p>Marzo 18, 2021</p>
+            <p class="date">Marzo 18, 2021</p>
             <p>Me presento, soy Santiago actualmente estudiante de Ing. de Sistemas y apasionado por
                 la programacion; este blog sera mi bitacora de aprendizaje, depende de en que momento 
                 llegues hasta aqui va a haber mas o menos material y depende de lo que aprenda se 
                 verá mejor o peor, aquí cuento un poco de mi historia por que quiero llegar a ser
                 Senior developer y como lo voy consiguiendo.
+            </p>
+            <hr>
+            <h2 id="first-blog">Aplicando un poco de CSS</h2>
+            <p class="date">Marzo 19, 2021</p>
+            <h3>Width, height y overflow</h3>
+            <p>Width sirve para definir que tan ancho es un bloque ya sea por porcentaje o por pixeles<br>
+                Height sirve como Width pero para el alto<br>
+                Over flow sirve para darles propiedades cuando el cuadro es mas pequeño que el tamaño de contenido que deseamos.   
+            <h3>Border, Margin y Padding</h3>
+            </p>sirve para modelar las cajas que es como se representa CSS en el navegador<br>
+            Border: puede escribir sus propiedades de forma abreviada como {width, style, color} asi <span class="code">border: 5px solid red ;</span>
+            <h3>Position</h3>
+            <p>En Css con el atributo position, podemos darle valores como relative, absolute o fixed. <br>
+                Absolute sirve para darle un valor fijo a una caja, especificando la posicion absoluta, con absolute pasan cosas y es que se
+                puede sobreponer, por lo que hay que usarlo con cuidado, y especificar su <span class="code">z-index</span> <br>
             </p>
         </div>
 
